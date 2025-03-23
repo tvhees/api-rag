@@ -1,4 +1,41 @@
 {
   "name": "api-rag",
-  "packageManager": "yarn@4.7.0"
+  "version": "0.0.1",
+  "description": "Generate TypeScript client code from OpenAPI specifications using LangChain and Ollama",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node --esm src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "openapi-ts-client": "./dist/index.js"
+  },
+  "packageManager": "yarn@4.7.0",
+  "devDependencies": {
+    "@types/node": "^22.13.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "keywords": [
+    "openapi",
+    "typescript",
+    "langchain",
+    "ollama",
+    "rag"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@apidevtools/swagger-parser": "^10.1.1",
+    "@langchain/community": "^0.3.36",
+    "@langchain/core": "^0.3.42",
+    "@langchain/ollama": "^0.2.0",
+    "commander": "^13.1.0",
+    "langchain": "^0.3.19",
+    "ollama": "^0.5.14",
+    "zod": "^3.24.2"
+  }
 }
