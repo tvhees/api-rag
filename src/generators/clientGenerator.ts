@@ -24,16 +24,25 @@ export async function generateClient(
       ${outputShape}
       
       IMPORTANT REQUIREMENTS:
-      1. ONLY use endpoints and HTTP methods that are explicitly defined in the OpenAPI specification
-      2. For the PetStore API, do NOT use GET /pet - this endpoint doesn't exist. Instead, use endpoints like GET /pet/findByStatus to find pets
-      3. Verify that the HTTP method you're using is valid for the endpoint
-      4. Use the fetch API (not axios or other libraries)
-      5. Include all necessary TypeScript interfaces based on the actual API response structure
-      6. Transform the API response to match the desired output shape
-      7. Do not use any imports unless absolutely necessary (e.g., no need for node-fetch in browser environments)
+      - Generate a COMPLETE, WORKING TypeScript file with ALL necessary code
+      - Use the native fetch API (not axios or other libraries)
+      - Include a main function that makes the actual API call using fetch
+      - Include the function that transforms the API response to the desired shape
+      - ONLY use endpoints and HTTP methods that are explicitly defined in the OpenAPI specification
+      - Verify that the HTTP method you're using is valid for the endpoint
+      - Do not use any imports
       
+      The code MUST include:
+        - The actual API URL from the OpenAPI spec (not a placeholder)
+        - A function that makes the API call (e.g., 'async function fetchData() {...}')
+        - A function that transforms the response (e.g., 'function transformResponse(data) {...}')
+        - All necessary type definitions
+        - A usage example showing how to call the function
+
       The code should be specific to this API, not generic placeholders. Use the actual endpoint paths, 
       parameter names, and response structures from the OpenAPI specification.
+
+      DO NOT just provide interfaces or type definitions. I need complete, executable code.
     `
     });
 
