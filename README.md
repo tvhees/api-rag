@@ -16,6 +16,7 @@ This tool allows you to:
 ## Prerequisites
 
 - Node.js (v16 or later)
+- Corepack/Yarn Berry
 - Ollama installed locally (https://ollama.ai/)
 
 ## Installation
@@ -36,17 +37,17 @@ yarn run build
 ## Usage
 ### Basic Usage
 ```bash
-npm start generate -s <openapi-spec-url> -d "<data-description>" -o "<output-shape>"
+yarn start generate -s <openapi-spec-url> -d "<data-description>" -o "<output-shape>"
 ```
 
 ### Save Output to File
 ```bash
-npm start generate -s <openapi-spec-url> -d "<data-description>" -o "<output-shape>" -f <output-file-path>
+yarn start generate -s <openapi-spec-url> -d "<data-description>" -o "<output-shape>" -f <output-file-path>
 ```
 
 ### Example
 ```bash
-npm start generate -s https://petstore3.swagger.io/api/v3/openapi.json -d "Get a list of available pets" -o "interface PetList { pets: Array<{ id: number; name: string; status: string }> }" -f ./output/petClient.ts
+yarn start generate -s https://petstore3.swagger.io/api/v3/openapi.json -d "Get a list of available pets" -o "interface PetList { pets: Array<{ id: number; name: string; status: string }> }" -f ./output/petClient.ts
 ```
 
 ## Parameters
