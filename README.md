@@ -3,7 +3,8 @@
 A CLI tool that generates TypeScript client code from OpenAPI v3 specifications using LangChain and Ollama.
 Most of the code was written using Claude 3.7 Sonnet.
 
-**:warning: This is for demonstration/exploration purposes only. Clients are not generated deterministically and I recommend using one of the many existing packages for generating TypeScript from OpenAPI specs :warning:**
+> [!WARNING]
+> This is for demonstration/exploration purposes only. Clients are not generated deterministically and I recommend using one of the many existing packages for generating TypeScript from OpenAPI specs
 
 ## Overview
 
